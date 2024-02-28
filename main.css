@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 16px/1.5 Verdana, sans-scrif;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    gap: 24px;
+}
+
+.gallery .item{
+border: 1px solid #000;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.span-col-2{
+    grid-column: auto/span 2;
+}
+.spen-row-2{
+    grid-row: auto/span 2;
+}
+.span-col-3{
+    grid-column: auto / span 3;
+}
